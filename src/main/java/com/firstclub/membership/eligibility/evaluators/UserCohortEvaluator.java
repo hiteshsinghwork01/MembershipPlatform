@@ -19,6 +19,7 @@ public class UserCohortEvaluator implements CriteriaEvaluator {
         if (context.getUserCohort() == null) {
             return false;
         }
-        return criteria.getCriteriaValue().trim().equalsIgnoreCase(context.getUserCohort().name());
+        String value = criteria.getCriteriaValue();
+        return value != null && value.trim().equalsIgnoreCase(context.getUserCohort().name());
     }
 }

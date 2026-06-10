@@ -29,11 +29,6 @@ public class MembershipTierController {
 
     private final MembershipTierService tierService;
 
-    /**
-     * -------------------------
-     * Tier
-     * -------------------------
-     */
     @PostMapping
     public ResponseEntity<ApiResponse<MembershipTierResponse>> createTier(
             @Valid @RequestBody CreateTierRequest request) {
@@ -65,11 +60,6 @@ public class MembershipTierController {
         return ResponseEntity.ok(ApiResponse.success(null));
     }
 
-    /**
-     * -------------------------
-     * Benefits
-     * -------------------------
-     */
     @PostMapping("/{tierId}/benefits")
     public ResponseEntity<ApiResponse<TierBenefitConfigResponse>> addBenefit(
             @PathVariable Long tierId,
@@ -99,11 +89,6 @@ public class MembershipTierController {
         return ResponseEntity.ok(ApiResponse.success(null));
     }
 
-    /**
-     * -------------------------
-     * Criteria
-     * -------------------------
-     */
     @PostMapping("/{tierId}/criteria")
     public ResponseEntity<ApiResponse<TierEligibilityCriteriaResponse>> addCriteria(
             @PathVariable Long tierId,

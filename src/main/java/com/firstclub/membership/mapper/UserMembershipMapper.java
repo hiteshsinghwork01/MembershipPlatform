@@ -4,10 +4,8 @@ import com.firstclub.membership.dto.response.UserMembershipResponse;
 import com.firstclub.membership.entity.UserMembership;
 import lombok.experimental.UtilityClass;
 
-import java.util.List;
-
 @UtilityClass
-public final class UserMembershipMapper {
+public class UserMembershipMapper {
 
     public static UserMembershipResponse toResponse(UserMembership membership) {
         return UserMembershipResponse.builder()
