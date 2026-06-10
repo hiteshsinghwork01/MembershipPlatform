@@ -30,7 +30,7 @@ On startup, Liquibase seeds:
 
 | Tier | Level | Eligibility |
 |------|-------|-------------|
-| Silver | 1 | ≥ 1 order (all time) |
+| Silver | 1 | Default (≥ 0 orders) |
 | Gold | 2 | ≥ 10 orders OR ≥ ₹5,000 order value (monthly) |
 | Platinum | 3 | ≥ ₹15,000 order value OR VIP cohort (monthly) |
 
