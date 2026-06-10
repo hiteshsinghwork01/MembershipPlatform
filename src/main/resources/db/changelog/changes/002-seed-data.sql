@@ -23,7 +23,7 @@ INSERT INTO benefit (id, name, description, benefit_type, is_active, created_at)
 
 --changeset membership-platform:002-seed-tier-criteria
 INSERT INTO tier_eligibility_criteria (membership_tier_id, criteria_type, operator, criteria_value, evaluation_window, is_active, created_at) VALUES
-(1, 'MIN_ORDER_COUNT', 'GTE', '1',         'ALL_TIME', TRUE, NOW()),
+(1, 'MIN_ORDER_COUNT', 'GTE', '0',         'ALL_TIME', TRUE, NOW()),
 (2, 'MIN_ORDER_COUNT', 'GTE', '10',        'MONTHLY',  TRUE, NOW()),
 (2, 'MIN_ORDER_VALUE', 'GTE', '5000.00',   'MONTHLY',  TRUE, NOW()),
 (3, 'MIN_ORDER_VALUE', 'GTE', '15000.00',  'MONTHLY',  TRUE, NOW()),
